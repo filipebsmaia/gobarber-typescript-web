@@ -53,7 +53,15 @@ const AuthProvider: React.FC = ({ children }) => {
 
     api.defaults.headers.authorization = `Bearer ${token}`;
 
-    setData({ token, user });
+    setData({
+      token,
+      user: {
+        ...user,
+        avatar_url:
+          user.avatar_url ||
+          `https://api.adorable.io/avatars/128/${nextAppointment.user.id}`,
+      },
+    });
   }, []);
 
   const singOut = useCallback(() => {
