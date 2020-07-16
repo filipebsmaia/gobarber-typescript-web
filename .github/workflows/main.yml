@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 env:
-  BUCKET: <nome do bucket>
+  BUCKET: gobarber.filipebsmaia.dev
 
 jobs:
   build:
