@@ -14,11 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Variables
-        run: echo Setup env variables
-        env:
-          REACT_APP_API_URL: https://api.gobarber.filipebsmaia.dev
-
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -39,6 +34,11 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+
+      - name: Setup Variables
+        run: echo Setup env variables
+        env:
+          REACT_APP_API_URL: https://api.gobarber.filipebsmaia.dev
 
       # - name: Run tests
       #   run: yarn test --watchAll false
