@@ -58,8 +58,7 @@ const AuthProvider: React.FC = ({ children }) => {
       user: {
         ...user,
         avatar_url:
-          user.avatar_url ||
-          `https://api.adorable.io/avatars/128/${nextAppointment.user.id}`,
+          user.avatar_url || `https://api.adorable.io/avatars/128/${user.id}`,
       },
     });
   }, []);
