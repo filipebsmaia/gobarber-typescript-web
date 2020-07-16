@@ -3,15 +3,19 @@ name: CI
 on:
   push:
     branches: [master]
-
-env:
-  BUCKET: gobarber.filipebsmaia.dev
+    env:
+      REACT_APP_API_URL: https://api.gobarber.filipebsmaia.dev
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup Variables
+        run: echo Setup env variables
+        env:
+          REACT_APP_API_URL: https://api.gobarber.filipebsmaia.dev
+
       - uses: actions/checkout@v2
 
       - name: Setup Node.js
@@ -34,11 +38,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
-
-      - name: Setup Variables
-        run: echo Setup env variables
-        env:
-          REACT_APP_API_URL: https://api.gobarber.filipebsmaia.dev
 
       # - name: Run tests
       #   run: yarn test --watchAll false
