@@ -13,6 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Setup Variables
         env:
           REACT_APP_API_URL: https://api.gobarber.filipebsmaia.dev
 
