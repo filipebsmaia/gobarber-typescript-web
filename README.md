@@ -49,6 +49,12 @@
   O objetivo foi criar uma aplicação onde usuários e profissionais possam se cadastrar para prestar serviços e/ou usufruir dos serviços.
 </p>
 
+<p>
+
+> Você pode acessar o backend dessa aplicação clicando <a href="https://github.com/filipebsmaia/gobarber-typescript-backend">aqui</a> ou o mobile clicando <a href="https://github.com/filipebsmaia/gobarber-typescript-mobile">aqui</a>.
+
+</p>
+
 <a id="tecnologias"></a>
 
 ## 🚀 Tecnologias
