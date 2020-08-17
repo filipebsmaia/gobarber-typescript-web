@@ -83,6 +83,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 Para clonar a aplicação você ira precisar do [Git](https://git-scm.com), [Node.js v12.16.3](https://nodejs.org/) ou maior + [Yarn v1.17.3](https://yarnpkg.com/) ou maior instalado em seu computador.
 
+> Antes de proseguir altere a chave `REACT_APP_API_URL` dentro da pasta do projeto no arquivo `.env`
+
 Configurando aplicação:
 
 ```sh
